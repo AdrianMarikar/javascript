@@ -47,7 +47,7 @@ function saying anything you want, like we did on the video.
 
 -->
 
-<button id="theButton" class="btn btn-primary">SUBMIT</button>
+<button onclick="alert('Anything I want.');" id="theButton" class="btn btn-primary">SUBMIT</button>
 
 
 
@@ -62,7 +62,7 @@ function saying anything you want, like we did on the video.
 
 <!--STEP 1 - Create a button with an id of clickMe that says Click Me-->
 
-
+<button id="clickMe" class="btn btn-success">Click Me</button>
 
 
 <!--BUTTON HERE-->
@@ -79,7 +79,9 @@ function saying anything you want, like we did on the video.
 
 //function here........
 
-
+function ClickMe() {
+	alert("Any text you want.");
+}
 
 
 //document.write() here.......
@@ -87,9 +89,11 @@ function saying anything you want, like we did on the video.
 
 
 
-
-
 // Step 3 Create a document.getElementById() and put the Id you made in Step 1 inside the parentheses.
+
+document.getElementById('clickMe').onclick = function() {
+		ClickMe()
+	};
 
 // code here.....
 
